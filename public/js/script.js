@@ -61,7 +61,7 @@ var addcart = (function AddToCart() {
      </a>
      <div class="cart-item-desc">
       <h6><a href="#">${item.name}</a></h6>
-      <p>1x - <span>#</span><span class="price">${item.price}</span>
+      <p>1x - <span>₦</span><span class="price">${item.price}</span>
       </p>
      </div>
    `;
