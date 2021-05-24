@@ -75,7 +75,7 @@ payButton.addEventListener("click", (e)=> {
     
     //for text.
     phone = document.querySelector("#phone").value;
-    localStorage.setItem('phone', phone)
+    // localStorage.setItem('phone', phone)
     lastName = document.querySelector("#lname").value;
     firstName = document.querySelector("#fname").value;
     dbt = document.querySelector("#customRadio1").value;
@@ -102,4 +102,3 @@ payButton.addEventListener("click", (e)=> {
     
 // });
 
-export {phone};
