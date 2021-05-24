@@ -37,7 +37,7 @@ for (let i=0; i< i1here; i++) {
     holder.classList.add("list-unstyled");
     // let singleTotalHolder = document.createElement("li");
     // singleTotalHolder.classList.add('mb-3')
-    holder.innerHTML = ` <li class="mb-3"><span>${ArrFinalQ[i] + "X"} <span></span>${ArrFinaleName[i]}</span>${"#" + ArrFinalPrice[i]}</li>`
+    holder.innerHTML = ` <li class="mb-3"><span>${ArrFinalQ[i] + "X"} <span></span>${ArrFinaleName[i]}</span>${"₦" + ArrFinalPrice[i]}</li>`
     const cartDet = document.querySelector(".cart-detail");
     cartDet.insertBefore(holder, cartDet.childNodes[0])
     // cartDet.appendChild(holder);
@@ -57,6 +57,14 @@ let firstName;
 let lastName;
 let subject;
 let text;
+let address;
+let address2;
+let city;
+let state; 
+let zip;
+let dbt;
+let payStack;
+
 
 
 
@@ -67,11 +75,15 @@ payButton.addEventListener("click", (e)=> {
     
     //for text.
     phone = document.querySelector("#phone").value;
+    localStorage.setItem('phone', phone)
     lastName = document.querySelector("#lname").value;
     firstName = document.querySelector("#fname").value;
+    dbt = document.querySelector("#customRadio1").value;
+    console.log("radio hahaha: " + dbt);
+    
     
     subject = "Testing Maktaris Herbals";
-    text = phone + " " + " " + lastName + " " + firstName;
+    text = dbt + " " + phone + " " + " " + lastName + " " + firstName;
     
     console.log(email, phone, lastName, firstName)
     const data = {
@@ -89,3 +101,5 @@ payButton.addEventListener("click", (e)=> {
 // $('.pay').on('submit', (e) => {
     
 // });
+
+export {phone};
