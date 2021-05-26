@@ -919,6 +919,13 @@ select:-webkit-autofill {
     width: 220px !important;
     /* height: 200px;  */
   }
+  .bigItem {
+    width: 1500px;
+  }
+  .bigflip {
+    /* width: 800px; */
+    height:  600px;
+  }
 }
 
 a {
@@ -1001,6 +1008,7 @@ a {
   
 }
 
+
 @media screen and (max-width: 570px) {
   .singleproduct2 {
     display: none;
@@ -1032,6 +1040,8 @@ a {
   position: relative;
   margin: 0 auto;
 }
+
+
 .timeline:after {
   content: "";
   position: absolute;

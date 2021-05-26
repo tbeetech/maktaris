@@ -182,7 +182,7 @@ function owlcarousel() {
       dots: $carousel.data("dots"),
       nav: $carousel.data("nav"),
       autoplay: $carousel.data("autoplay"),
-      autoplayTimeout: $carousel.data("autoplay-timeout"),
+      autoplayTimeout: 8000,
       navText: [
         '<span class="fas fa-chevron-left"><span>',
         '<span class="fas fa-chevron-right"></span>',
