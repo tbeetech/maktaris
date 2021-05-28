@@ -913,6 +913,7 @@ select:-webkit-autofill {
     left: 575px;
     cursor: pointer;
   }
+
   .footerlogo {
     right: 40px;
     bottom: 50px !important;
@@ -980,6 +981,24 @@ a {
     width: 220px !important;
     /* height: 200px;  */
   }
+  .greycross {
+    color: grey;
+    font-size: medium;
+    position: relative;
+    bottom: 40px;
+    left: 90px;
+  }
+
+
+  .add-to-cart-btn {
+    position: relative;
+    bottom: 110px;
+    left: 230px;
+  }
+}
+
+.fa-eye {
+  font-size: x-large;
 }
 
 /* xxxxxxxxxxxxxxxxxxxxxxx2xxxxx */

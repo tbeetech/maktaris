@@ -7,12 +7,94 @@ var all = ['product1', 'product2', 'product3', 'product4','product5', 'product6'
 var addcart = (function AddToCart() {
   var count = 0;
   const cardBtn = document.querySelectorAll(".store-item-icon");
+  const addToCartBtn = document.querySelectorAll(".add-to-cart-btn");
+
+  for (let i = 0; i < addToCartBtn.length; i++) {
+    addToCartBtn[i].addEventListener("click", ()=> {
+      console.log(cardBtn[i].firstChild.nextElementSibling)
+      if (
+        cardBtn[i].firstChild.nextElementSibling.parentNode.parentNode.firstChild.nextSibling.classList.contains(
+          "store-item-icon"
+        )
+      ) {
+       
+        let fullPath =
+        cardBtn[i].firstChild.nextElementSibling.parentNode.parentNode.parentNode.parentNode.parentNode
+            .parentNode.firstChild.nextElementSibling.firstChild
+            .nextElementSibling.src;
+        let pos = fullPath.indexOf("images") + 6;
+        let partPath = fullPath.slice(pos);
+        item.img = `cart-images${partPath}`;
+
+        console.log(cardBtn[i].firstChild.nextElementSibling.parentNode.parentNode.parentNode.parentNode.parentNode
+          .parentNode.childNodes[3].firstChild.nextElementSibling.textContent);
+          
+        let productName =
+        cardBtn[i].firstChild.nextElementSibling.parentNode.parentNode.parentNode.parentNode.parentNode
+          .parentNode.childNodes[3].firstChild.nextElementSibling.textContent;  
+        item.name = productName;
+
+        console.log(cardBtn[i].firstChild.nextElementSibling.parentNode.parentNode.parentNode.parentNode.parentNode
+          .parentNode.childNodes[3].childNodes[2].textContent);
+
+        let price =
+        cardBtn[i].firstChild.nextElementSibling.parentNode.parentNode.parentNode.parentNode.parentNode
+        .parentNode.childNodes[3].childNodes[2].textContent;
+        let finalPrice = price.slice(1).trim();
+        item.price = finalPrice;
+        console.log("the items are:", item);
+
+        localStorage.setItem(all[i1], JSON.stringify(item));
+
+        i1++    
+        
+
+        
+        
+        // console.log("final list item 0:", finalItemList[upperindex]);
+        // console.log("final list item 1:", finalItemList[1]);
+        // upperindex++;
+        // console.log(upperindex);
+        // localStorage.setItem("allitems", JSON.stringify(item));
+        // console.log(item.img);
+
+        const cartItem = document.createElement("li");
+
+        cartItem.innerHTML = `
+     <a href="#" class="image">
+      <img src="${item.img}" alt="">
+     </a>
+     <div class="cart-item-desc">
+      <h6><a href="#">${item.name}</a></h6>
+      <p>1x - <span>₦</span><span class="price">${item.price}</span>
+      </p>
+     </div>
+   `;
+        //select cart ul
+        const cart = document.querySelector(".cart-list");
+        const total = document.querySelector(".total");
+
+        cart.insertBefore(cartItem, total);
+        alert("item added to cart");
+
+        showTotals();
+        // console.log("outer item: ", item);
+      }    
+      
+      localStorage.setItem("i1", i1);
+    })
+
+
+  }
+
+//add to cart button ends.
+  // console.log(cardBtn[0].firstChild.nextElementSibling); //Replace event.target with this
   
   cardBtn.forEach((btn) => {
 
     btn.addEventListener("click", (event) => {
       // console.log("button works");
-      // console.log(event.target);
+      console.log(event.target);
       if (
         event.target.parentNode.parentNode.firstChild.nextSibling.classList.contains(
           "store-item-icon"
