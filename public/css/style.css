@@ -927,6 +927,13 @@ select:-webkit-autofill {
     /* width: 800px; */
     height:  600px;
   }
+  .greycross {
+    color: grey;
+    font-size: medium;
+    position: relative;
+    bottom: 40px;
+    left: 90px;
+  }
 }
 
 a {

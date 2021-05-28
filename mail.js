@@ -1,5 +1,6 @@
 const nodemailer = require("nodemailer");
 const mailGun = require("nodemailer-mailgun-transport");
+const mailcomposer = require("mailcomposer");
 
 const auth = {
   auth: {
@@ -28,3 +29,4 @@ const sendMail = (email, subject, text, cb) => {
   });
 };
 
+module.exports = sendMail;

@@ -84,6 +84,7 @@ payButton.addEventListener("click", (e)=> {
     
     subject = "Testing Maktaris Herbals";
     text = dbt + " " + phone + " " + " " + lastName + " " + firstName;
+
     
     console.log(email, phone, lastName, firstName)
     const data = {
