@@ -946,7 +946,9 @@ a {
   padding: 0;
   margin: 0;
 }
-
+.make-price-red {
+  color: red !important;
+}
 @media screen and (max-width: 570px) {
   .singleproduct1,
   .singleproduct2,
