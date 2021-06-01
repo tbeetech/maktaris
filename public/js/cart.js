@@ -55,9 +55,9 @@ console.log(p13);
 console.log(p14);
 console.log(p15);
 //complete all arrays up to 16.
-let prodNames = ["prod1", "prod2", "prod3", "prod4"]
-let quantityList = ["fp1", "fp2", "fp3", "fp4"]
-let perItem = ["toti1", "toti2", "toti3", "toti4"]
+let prodNames = ["prod1", "prod2", "prod3", "prod4", "prod5"]
+let quantityList = ["fp1", "fp2", "fp3", "fp4", "fp5"]
+let perItem = ["toti1", "toti2", "toti3", "toti4", "toti5"]
 
 for (let i = 0; i < ilength; i++) {
   const cartTray = document.createElement("tr");

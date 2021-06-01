@@ -917,8 +917,8 @@ select:-webkit-autofill {
   .footerlogo {
     right: 40px;
     bottom: 50px !important;
-    width: 220px !important;
-    /* height: 200px;  */
+    width: 320px !important;
+    height: 375px !important; 
   }
   .bigItem {
     width: 1500px;
@@ -949,6 +949,16 @@ a {
 .make-price-red {
   color: red !important;
 }
+
+.fa-facebook-f {
+  font-size: 40px;
+}
+.fa-instagram {
+  font-size: 40px;
+}
+.fa-whatsapp {
+  font-size: 40px;
+} 
 @media screen and (max-width: 570px) {
   .singleproduct1,
   .singleproduct2,
@@ -985,10 +995,10 @@ a {
     cursor: pointer;
   }
   .footerlogo {
-    right: 200px;
-    bottom:-50px !important;
-    width: 220px !important;
-    /* height: 200px;  */
+    right: 120px;
+    bottom:-140px !important;
+    width: 250px !important;
+    height: 300px !important; 
   }
   .greycross {
     color: grey;
