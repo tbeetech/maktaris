@@ -1010,9 +1010,15 @@ a {
 
 
   .add-to-cart-btn {
+    width: 100px;
+    height: 40px;
     position: relative;
     bottom: 110px;
     left: 230px;
+    font-size: smaller;
+    /* text-align: right;  */
+    padding:0;
+    margin: 0;
   }
 }
 

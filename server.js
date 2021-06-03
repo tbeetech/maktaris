@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const sendMail = require('./mail')
+const sendMailContact = require("./contactemail")
 const app = express();
 const PORT = process.env.PORT || 5000;
 app.use(express.static('public'))
@@ -23,6 +24,20 @@ app.post('/product-checkout', (req, res)=> {
           res.json({message: "Email has been sent!!"})
         }
       })
+})
+
+app.post('/contact', (req, res)=> {
+    const {email, subject, text} = req.body;
+    console.log("Contact Data: ", req.body);
+
+    sendMailContact(email, subject, text, function(err, data){
+        if(err) {
+            res.status(500).json({ message: 'Internal error'});
+        
+        } else {
+            res.json({message: 'Email has been sent!!'})
+        }
+    })
 })
 
 app.get('/', (req,res)=> {

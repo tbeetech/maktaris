@@ -41,7 +41,7 @@ for (let i=0; i< i1here; i++) {
     holder.classList.add("list-unstyled");
     // let singleTotalHolder = document.createElement("li");
     // singleTotalHolder.classList.add('mb-3')
-    holder.innerHTML = ` <li class="mb-3"><span>${ArrFinalQ[i] + "X"} <span></span>${ArrFinaleName[i]}</span>${"₦" + ArrFinalPrice[i]}</li>`
+    holder.innerHTML = ` <li class="mb-3"><span>${ArrFinalQ[i] + "X"} <span></span>${ArrFinaleName[i]}</span>${" ₦" + ArrFinalPrice[i]}</li>`
     const cartDet = document.querySelector(".cart-detail");
     cartDet.insertBefore(holder, cartDet.childNodes[0])
     // cartDet.appendChild(holder);
@@ -91,6 +91,12 @@ payButton.addEventListener("click", (e)=> {
     lastName = document.querySelector("#lname").value;
     firstName = document.querySelector("#fname").value;
     dbt = document.querySelector("#customRadio1").value;
+    address = document.querySelector("#address").value;
+    address2 = document.querySelector("#address2").value;
+    zip = document.querySelector("#zippostalcode").value;
+    city = document.querySelector("#towncity").value;
+    state = document.querySelector("#statename").value;
+
     console.log("radio hahaha: " + dbt);
     
     
@@ -101,7 +107,7 @@ payButton.addEventListener("click", (e)=> {
     var text = `<div style="height: 100vh; border: 1px solid rgb(41, 216, 41); border-radius: 2px; font-family:Verdana, Geneva, Tahoma, sans-serif; color: grey; font-size: small;">      
     <div style="margin: 8px;">
      <div style="width:auto; height:50px; text-align: center; color: white; font-size: 20px; background-color:greenyellow;"> <p style="margin:0; position: relative; top: 10px;">Thank you for your Order!</p> </div>
-     <p>Hi + ${firstName}</p>
+     <p>Hi ${firstName}</p>
      <p style="margin-bottom: 1;">Thanks for your order. It’s on-hold until we confirm that payment has been received. In the meantime, here’s a reminder of what you ordered:</p>
      <strong style="font-style: oblique; ">SEND PROOF OF PAYMENT TO THIS WHATSAPP NUMBER:</strong>
      <p style="margin: 0;">+2347039773982</p>
@@ -112,17 +118,23 @@ payButton.addEventListener("click", (e)=> {
          <li>Account number: <strong style="font-size: x-small;">2034776995</strong></li>
          <li>Account Name: <strong style="font-size: x-small;">Maktaris signature</strong></li>
          <!--Fetch order date here...-->
-         <h3>${today}</h3>
+         <h3 style="text-decoration: underline;">${today}</h3>
+         <h2 style="color: green;text-decoration: underline;">Your Order:</h2>
          <!--Table for product draft should be created from checkout page as an indpendent string... and templated into main html string-->                    
      </ul>
 
      ${infodiv}
 <div>
  <div style="width: 160px; display:inline-flex">
-     <h1 style="border: 1px solid green; color: red;">Address 1</h1>
+     <h6 style="border: 1px solid green; color: red;">${address} ${zip}, ${city}, ${state}<p>${phone}, ${email}</p></h6>
+   
+     
+     
+     
+
      </div>
      <div style="width: 160px; display: inline-flex;">
-         <h1 style="border: 1px solid green; color: red;">Address 2</h1>
+     <h6 style="border: 1px solid green; color: red;">${address2} ${zip}, ${city}, ${state}<p>${phone}, ${email}</p></h6>
          </div>          
 </div>
     </div>
