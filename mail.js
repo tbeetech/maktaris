@@ -16,7 +16,7 @@ const sendMail = (email, subject, text, cb) => {
     from: email,
     to: "beatsbytbee@gmail.com",
     subject: subject,
-    html:`<b style="color:red;">${text}</b>`
+    html: text
     // text: text,
   };
 

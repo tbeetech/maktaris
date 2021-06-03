@@ -52,10 +52,15 @@ for (let i=0; i< i1here; i++) {
 
 }
 
-//grab html of receipt after render here...
+let today = new Date();
+console.log(today);
 
+let dataForRec = document.querySelector(".cart-detail")
+//grab html of receipt after render here...
+console.log("Table to parse:", dataForRec.outerHTML);
 // Hold form values 
 
+let infodiv = dataForRec.outerHTML;
 let email;
 let phone;
 let firstName;
@@ -69,6 +74,8 @@ let state;
 let zip;
 let dbt;
 let payStack;
+
+
 
 
 
@@ -88,10 +95,43 @@ payButton.addEventListener("click", (e)=> {
     
     
     subject = "Testing Maktaris Herbals";
-    text = dbt + " " + phone + " " + " " + lastName + " " + firstName;
+    // text = dbt + " " + phone + " " + " " + lastName + " " + firstName;
 
     //.. Ready html string to parse as text to sendmail options.
-    var receipt = `${phone}`
+    var text = `<div style="height: 100vh; border: 1px solid rgb(41, 216, 41); border-radius: 2px; font-family:Verdana, Geneva, Tahoma, sans-serif; color: grey; font-size: small;">      
+    <div style="margin: 8px;">
+     <div style="width:auto; height:50px; text-align: center; color: white; font-size: 20px; background-color:greenyellow;"> <p style="margin:0; position: relative; top: 10px;">Thank you for your Order!</p> </div>
+     <p>Hi + ${firstName}</p>
+     <p style="margin-bottom: 1;">Thanks for your order. It’s on-hold until we confirm that payment has been received. In the meantime, here’s a reminder of what you ordered:</p>
+     <strong style="font-style: oblique; ">SEND PROOF OF PAYMENT TO THIS WHATSAPP NUMBER:</strong>
+     <p style="margin: 0;">+2347039773982</p>
+     <h5 style="color: orange;">Our Bank details:</h5>
+     <strong style="color: green;">MAKTARIS HERBALS</strong>
+     <ul>
+         <li>Bank: <strong style="font-size: x-small;">First Bank plc</strong></li>
+         <li>Account number: <strong style="font-size: x-small;">2034776995</strong></li>
+         <li>Account Name: <strong style="font-size: x-small;">Maktaris signature</strong></li>
+         <!--Fetch order date here...-->
+         <h3>${today}</h3>
+         <!--Table for product draft should be created from checkout page as an indpendent string... and templated into main html string-->                    
+     </ul>
+
+     ${infodiv}
+<div>
+ <div style="width: 160px; display:inline-flex">
+     <h1 style="border: 1px solid green; color: red;">Address 1</h1>
+     </div>
+     <div style="width: 160px; display: inline-flex;">
+         <h1 style="border: 1px solid green; color: red;">Address 2</h1>
+         </div>          
+</div>
+    </div>
+     <!-- <div style="width: 180px;">
+         <h1 style="border: 1px solid green; color: red; position: relative; left: 200px;">Total amount</h1>
+     </div> -->
+
+
+ </div>`
 
     
     console.log(email, phone, lastName, firstName)
