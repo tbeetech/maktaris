@@ -87,7 +87,7 @@ for (let i = 0; i < ilength; i++) {
     </div>
   </td>
   <td>
-    <button type="submit" class="btn-delet"><i class="far fa-trash-alt"></i>
+    <button type="submit" class="btn-delet"><i class=""></i>
     </button>
   </td>
   <td>
@@ -232,3 +232,6 @@ for(let i = 0; i < allMinusButtons.length; i++) {
 // // console.log(storedList)
 
 
+
+
+// far fa-trash-alt:: trash can for future delete property...

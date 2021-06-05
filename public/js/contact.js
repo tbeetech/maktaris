@@ -35,3 +35,5 @@ sendBtn.addEventListener("click", (e)=> {
       })
 })
 
+
+document.querySelector(".cart").style.display = "none";

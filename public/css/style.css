@@ -1084,6 +1084,14 @@ a {
   position: relative;
   margin: 0 auto;
 }
+.frame {
+  width: 300px;
+  /* height: 250px; */
+  border: 3px solid #ccc;
+  background: #eee;
+  margin: auto;
+  padding: 15px 10px;
+}
 
 
 .timeline:after {
