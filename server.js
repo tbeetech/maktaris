@@ -9,9 +9,9 @@ app.use(express.json())
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.set('view engine', 'ejs')
-app.get('*', function(req, res) {  
-    res.redirect('https://' + req.headers.host + req.url);
-});
+// app.get('*', function(req, res) {  
+//     res.redirect('https://' + req.headers.host + req.url);
+// });
 app.post('/product-checkout', (req, res)=> {
     // res.json({message: "Message recieved"})
     // console.log("something got posted")
