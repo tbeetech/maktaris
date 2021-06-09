@@ -91,7 +91,7 @@ for (let i = 0; i < ilength; i++) {
     </button>
   </td>
   <td>
-  <span>$</span>
+  <span>₦</span>
     <h5 class="totalup">${productHolder[i].price}</h5>
   </td>
   `;
