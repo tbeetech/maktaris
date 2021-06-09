@@ -161,7 +161,7 @@ payButton.addEventListener("click", (e)=> {
         alert("Please tick direct bank transfer to proceed...")
     }
   
-    //   alert("You message as been recieved. You will receive response shortly")
+      alert("Order succeeded! payment receipt will be sent to your email shortly")
 })
 
 // $('.pay').on('submit', (e) => {
