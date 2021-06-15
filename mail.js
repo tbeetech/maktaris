@@ -12,8 +12,8 @@ const transporter = nodemailer.createTransport(mailGun(auth));
 
 const sendMail = (email, subject, text, cb) => {
   const mailOptions = {
-    from: email,
-    to: "beatsbytbee@gmail.com",
+    from: "maktarisherbalbackup@gmail.com",
+    to: email,
     subject: subject,
     html: text
     // text: text,
