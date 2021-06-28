@@ -935,7 +935,7 @@ select:-webkit-autofill {
     left: 90px;
   }
   .paypay {
-    background-color: #FFFFFF;
+    background:linear-gradient(to left, #185ADB, #FFFFFF);    
     width: 500px;
     height: 50vh;
     border:3px solid #185ADB;
@@ -1048,7 +1048,7 @@ a {
     margin: 0;
   }
   .paypay {
-    background-color: #FFFFFF;
+    background:linear-gradient(to left, #185ADB, #FFFFFF);
     width: 500px;
     height: 50vh;
     border:3px solid #185ADB;
