@@ -82,10 +82,16 @@ dbt = document.querySelector("#customRadio1").checked;
 console.log("xxxxxxxxxxx", dbt)
 
 let payButton = document.querySelector(".payaction");
+let paymentGlass = document.querySelector(".paypay");
+let divtoblur = document.querySelector(".container");
+let paystackexit = document.querySelector(".payexit")
+paystackexit.addEventListener("click", (e)=> {
+    paymentGlass.style.display = "none";
+})
 payButton.addEventListener("click", (e)=> {
     e.preventDefault()
     email = document.querySelector("#email").value;
-    
+   
     //for text.
     phone = document.querySelector("#phone").value;
     // localStorage.setItem('phone', phone)
@@ -100,7 +106,7 @@ payButton.addEventListener("click", (e)=> {
 
     console.log("radio hahaha: " + dbt);
     
-    if(dbt) {
+    // if(dbt) {
         subject = "Testing Maktaris Herbals";
         // text = dbt + " " + phone + " " + " " + lastName + " " + firstName;
     
@@ -157,11 +163,12 @@ payButton.addEventListener("click", (e)=> {
           $.post("/product-checkout", data, function() {
             console.log("Server recieved our data")
           })
-    } else {
-        alert("Please tick direct bank transfer to proceed...")
-    }
-  
-      alert("Order succeeded! payment receipt will be sent to your email shortly")
+
+          paymentGlass.style.display = "block";
+          divtoblur.style.filter = 'blur(5px)';
+    // } else {
+    //     alert("Please tick direct bank transfer to proceed...")
+    // }
 })
 
 // $('.pay').on('submit', (e) => {

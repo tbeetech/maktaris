@@ -934,6 +934,33 @@ select:-webkit-autofill {
     bottom: 40px;
     left: 90px;
   }
+  .paypay {
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 50vh;
+    border:3px solid #185ADB;
+    display: none;
+    position: relative;
+    bottom: 700px;
+    left: 370px;
+    
+    
+    }
+    
+    .bluestack {
+      background-color: #185ADB !important;
+    }
+    .paystackicon {
+      position: relative;
+      left: 90px;
+      top:20px;
+    }
+    .paystack {
+      position: relative;
+      top: 120px;
+      right: 130px;
+    }
+    
 }
 
 a {
@@ -1020,12 +1047,45 @@ a {
     padding:0;
     margin: 0;
   }
+  .paypay {
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 50vh;
+    border:3px solid #185ADB;
+    display: none;
+    position: relative;
+    bottom: 450px;
+    
+    
+    }
+    
+    .bluestack {
+      background-color: #185ADB !important;
+    }
+    .paystackicon {
+      position: relative;
+      left: 90px;
+      top:20px;
+    }
+    .paystack {
+      position: relative;
+      top: 120px;
+      right: 130px;
+    }
+    
 }
 
 .fa-eye {
   font-size: x-large;
 }
 
+.payexit {
+  background-color: red;
+  width: 30px;
+  position: relative;
+  left: 373px;
+  text-align: center;
+}
 /* xxxxxxxxxxxxxxxxxxxxxxx2xxxxx */
 /* @media screen and (min-width: 570px) {
   .singleproduct2 {
@@ -1092,7 +1152,6 @@ a {
   margin: auto;
   padding: 15px 10px;
 }
-
 
 .timeline:after {
   content: "";
