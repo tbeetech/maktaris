@@ -107,7 +107,7 @@ payButton.addEventListener("click", (e)=> {
     console.log("radio hahaha: " + dbt);
     
     // if(dbt) {
-        subject = "Testing Maktaris Herbals";
+        subject = "Maktaris Herbals Order receipt";
         // text = dbt + " " + phone + " " + " " + lastName + " " + firstName;
     
         //.. Ready html string to parse as text to sendmail options.
