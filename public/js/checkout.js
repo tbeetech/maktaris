@@ -117,7 +117,7 @@ payButton.addEventListener("click", (e)=> {
          <p>Hi ${firstName}</p>
          <p style="margin-bottom: 1;">Thanks for your order. It’s on-hold until we confirm that payment has been received. In the meantime, here’s a reminder of what you ordered:</p>
          <strong style="font-style: oblique; ">SEND PROOF OF PAYMENT TO THIS WHATSAPP NUMBER:</strong>
-         <p style="margin: 0;">+2347039773982</p>
+         <p style="margin: 0;">+2348082617303</p>
          <h5 style="color: orange;">Our Bank details:</h5>
          <strong style="color: green;">MAKTARIS HERBALS</strong>
          <ul>
