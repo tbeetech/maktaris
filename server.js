@@ -8,10 +8,10 @@ app.use(express.static('public'))
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended: false}));
 
-app.set('view engine', 'ejs')
-app.get('*', function(req, res) {  
-    res.redirect('https://' + req.headers.host + req.url);
-});
+// app.set('view engine', 'ejs')
+// app.get('*', function(req, res) {  
+//     res.redirect('https://' + req.headers.host + req.url);
+// });
 // app.enable('trust proxy')
 // app.use((req, res, next) => {
 //     req.secure ? next() : res.redirect('https://' + req.headers.host + req.url)
