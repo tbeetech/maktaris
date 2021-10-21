@@ -9,16 +9,16 @@ app.use(express.json())
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.set('view engine', 'ejs')
-// app.get('*', function(req, res) {  
-//     res.redirect('https://' + req.headers.host + req.url);
-// });
+app.get('*', function(req, res) {  
+    res.redirect('https://' + req.headers.host + req.url);
+});
 app.enable('trust proxy')
 app.use((req, res, next) => {
     req.secure ? next() : res.redirect('https://' + req.headers.host + req.url)
 })
 app.post('/product-checkout', (req, res)=> {
     // res.json({message: "Message recieved"})
-    // console.log("something got posted")
+    // console.log("something got posted")-
     // console.log(data);
     const {email, subject, text} = req.body;   
     console.log('Data: ', req.body);
