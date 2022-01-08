@@ -8,6 +8,8 @@ app.use(express.static('public'))
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended: false}));
 
+const d = new Date();
+const finalDate = d.getFullYear();
 app.set('view engine', 'ejs')
 // app.get('*', function(req, res) {  
 //     res.redirect('https://' + req.headers.host + req.url);
@@ -47,7 +49,7 @@ app.post('/contact', (req, res)=> {
 })
 
 app.get('/', (req,res)=> {
-    res.render('index')
+    res.render('index', {finalDate:finalDate})
 })
 app.get('/about', (req, res)=>{
     res.render('about')

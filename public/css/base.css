@@ -324,7 +324,7 @@ span,
     Pre Loader
 ------------------------*/
 #ht-preloader {
-  background: #ffffff;
+  background-image: url("loading_screen.jpeg");
   bottom: 0;
   height: 100%;
   left: 0;
