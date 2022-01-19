@@ -1699,3 +1699,9 @@ input.form-product {
   top: 0;
   border-radius: 0.25rem;
 }
+
+.scrollex {
+  height:600px; 
+  
+  overflow:scroll;
+}
