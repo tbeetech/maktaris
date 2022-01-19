@@ -52,23 +52,23 @@ app.get('/', (req,res)=> {
     res.render('index', {finalDate:finalDate})
 })
 app.get('/about', (req, res)=>{
-    res.render('about')
+    res.render('about', {finalDate:finalDate})
 })
 
 app.get('/gridshop', (req, res)=> {
-    res.render('gridshop')
+    res.render('gridshop', {finalDate:finalDate})
 })
 
 app.get('/cart', (req, res)=> {
-    res.render('cart')
+    res.render('cart', {finalDate:finalDate})
 })
 app.get('/contact', (req, res)=> {
-    res.render('contact')
+    res.render('contact', {finalDate:finalDate})
 
 })
 
 app.get('/product-checkout', (req, res)=> {
-    res.render('product-checkout')
+    res.render('product-checkout',{finalDate:finalDate})
 })
 
 
