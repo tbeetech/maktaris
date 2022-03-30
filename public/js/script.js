@@ -1,3 +1,7 @@
+var alertlist = document.getElementsByClassName("alert")
+var closealertlist = document.getElementsByClassName("close")
+
+console.log(alertlist )
 var finalItemList = [];
 var upperindex = 0;
 // var finalfinal = [];
@@ -45,6 +49,7 @@ var addcart = (function AddToCart() {
         console.log("the items are:", item);
 
         localStorage.setItem(all[i1], JSON.stringify(item));
+      
 
         i1++    
         
@@ -73,9 +78,22 @@ var addcart = (function AddToCart() {
         //select cart ul
         const cart = document.querySelector(".cart-list");
         const total = document.querySelector(".total");
-
+     
+  
         cart.insertBefore(cartItem, total);
-        alert("item added to cart");
+     
+        
+          alertlist[i].style.display = 'block';  
+         
+          
+          
+          
+          closealertlist[i].addEventListener("click", ()=>{
+            alertlist[i].style.display = "none";
+            });
+         
+
+              // alert("item added to cart");
 
         showTotals();
         // console.log("outer item: ", item);
