@@ -656,8 +656,7 @@ span,
   max-width: 1140px;
   z-index: 999;
   text-align: center;
-  background: #03051e;
-  z-index: 9999;
+  background: #3E7C17;  z-index: 9999;
 }
 .search-inner {
   padding: 5px 5px;
@@ -819,8 +818,7 @@ span,
 }
 .navbar-nav .nav-item.dropdown .dropdown-menu {
   padding: 35px;
-  background: #03051e;
-  top: 120%;
+  background: #3E7C17;  top: 120%;
   border: none;
   margin-top: 0;
 }
@@ -1034,15 +1032,13 @@ span,
 }
 
 .header-3 #header-wrap.fixed-header {
-  background: #03051e;
-}
+  background: #3E7C17;}
 .header-3 #header-wrap.fixed-header .navbar {
   margin-bottom: 0;
 }
 
 .header-3 .navbar {
-  background: #03051e;
-  margin-bottom: -40px;
+  background: #3E7C17;  margin-bottom: -40px;
   padding-right: 30px;
 }
 .header-3 .topbar-link i,
