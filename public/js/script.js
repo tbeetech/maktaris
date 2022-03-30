@@ -84,10 +84,7 @@ var addcart = (function AddToCart() {
      
         
           alertlist[i].style.display = 'block';  
-         
-          
-          
-          
+
           closealertlist[i].addEventListener("click", ()=>{
             alertlist[i].style.display = "none";
             });

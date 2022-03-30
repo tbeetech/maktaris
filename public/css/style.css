@@ -879,21 +879,8 @@ select:-webkit-autofill {
   display: block;
 }
 @media screen and (min-width: 570px) {
-  .singleproduct1,
-  .singleproduct2,
-  .singleproduct3,
-  .singleproduct4,
-  .singleproduct5,
-  .singleproduct6,
-  .singleproduct7,
-  .singleproduct8,
-  .singleproduct9,
-  .singleproduct10,
-  .singleproduct11,
-  .singleproduct12,
-  .singleproduct13,
-  .singleproduct14,
-  .singleproduct15 {
+  
+  .singleproduct {
     display: none;
     border: 4px solid greenyellow;
     width: 600px;
@@ -905,10 +892,8 @@ select:-webkit-autofill {
     background-color: #fffbdf;
   }
   .closesingle {
-    font-size: x-large;
+    font-size: medium;
     color: red;
-    background: greenyellow;
-    border: 2px solid grey;
     position: relative;
     left: 575px;
     cursor: pointer;
@@ -987,21 +972,8 @@ a {
   font-size: 40px;
 } 
 @media screen and (max-width: 570px) {
-  .singleproduct1,
-  .singleproduct2,
-  .singleproduct3,
-  .singleproduct4,
-  .singleproduct5,
-  .singleproduct6,
-  .singleproduct7,
-  .singleproduct8,
-  .singleproduct9,
-  .singleproduct10,
-  .singleproduct11,
-  .singleproduct12,
-  .singleproduct13,
-  .singleproduct14,
-  .singleproduct15 {
+  
+  .singleproduct {
     display: none;
     border: 4px solid greenyellow;
     width: 250px;
@@ -1013,10 +985,8 @@ a {
     background-color: #fffbdf;
   }
   .closesingle {
-    font-size: x-large;
+    font-size: medium;
     color: red;
-    background: greenyellow;
-    border: 2px solid grey;
     position: relative;
     left: 220px;
     cursor: pointer;
