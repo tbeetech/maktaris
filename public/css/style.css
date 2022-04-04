@@ -70,7 +70,7 @@ h1 {
   line-height: 70px;
   font-weight: 600;
   text-transform: capitalize;
-  color: #ffcc29;
+  color: #F58634;
   letter-spacing: 0;
 }
 h2 {
@@ -78,7 +78,7 @@ h2 {
   font-style: normal;
   line-height: 50px;
   font-weight: 600;
-  color: #ffcc29;
+  color: #F58634;
   text-transform: capitalize;
   margin-bottom: 10px;
   position: relative;
@@ -88,7 +88,7 @@ h3 {
   font-style: normal;
   line-height: 40px;
   font-weight: 500;
-  color: #ffcc29;
+  color: #F58634;
 }
 h4 {
   font-size: 24px;
@@ -96,7 +96,7 @@ h4 {
   margin-bottom: 10px;
   font-weight: 500;
   line-height: 34px;
-  color: #ffcc29;
+  color: #F58634;
 }
 h5 {
   font-size: 20px;
@@ -104,14 +104,14 @@ h5 {
   margin-bottom: 10px;
   font-weight: 500;
   line-height: 26px;
-  color: #ffcc29;
+  color: #F58634;
 }
 h6 {
   font-size: 18px;
   font-style: normal;
   line-height: 24px;
   margin-bottom: 10px;
-  color: #ffcc29;
+  color: #F58634;
 }
 ul {
   margin: 0px;
@@ -210,7 +210,7 @@ section {
   color: #2b580c;
 }
 .text-black {
-  color: #ffcc29 !important;
+  color: #F58634 !important;
 }
 .text-grey {
   color: #999999;
@@ -410,7 +410,7 @@ section {
   line-height: 24px;
 }
 .contact-media a {
-  color: #ffcc29;
+  color: #F58634;
   display: block;
   margin-bottom: 10px;
 }
@@ -450,13 +450,13 @@ section {
 }
 label {
   font-size: 14px;
-  color: #ffcc29;
+  color: #F58634;
 }
 .form-control {
   height: 50px;
   border-radius: 0;
   font-size: 13px;
-  color: #ffcc29;
+  color: #F58634;
   background: none;
   border: none;
   border-bottom: 1px solid #eeeff7;
@@ -562,7 +562,7 @@ textarea:-webkit-autofill,
 select:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
   box-shadow: 0 0 0 1000px #ffffff inset !important;
-  -webkit-text-fill-color: #ffcc29 !important;
+  -webkit-text-fill-color: #F58634 !important;
   transition: background-color 5000s ease-in-out 0s;
 }
 .theme-bg input:-webkit-autofill,
@@ -845,7 +845,7 @@ select:-webkit-autofill {
   background-color: transparent !important;
 }
 .nice-select .option {
-  color: #ffcc29;
+  color: #F58634;
   width: 100%;
   cursor: pointer;
   font-weight: 400;
@@ -1168,7 +1168,7 @@ a {
 }
 .timeline-content h3 {
   font-size: 20px;
-  color: #ffcc29;
+  color: #F58634;
   font-weight: bold;
 }
 .timeline-inner::before {
@@ -1252,7 +1252,7 @@ a {
 .product-item .product-desc {
   padding: 20px;
   width: 100%;
-  color: #ffcc29;
+  color: #F58634;
   font-weight: 600;
   font-size: 20px;
 }
@@ -1265,7 +1265,7 @@ a {
 .product-name {
   font-size: 16px;
   font-weight: normal;
-  color: #5f6368;
+  color: white;
   display: block;
   margin-bottom: 7px;
 }
@@ -1299,7 +1299,7 @@ a {
   border: 1px solid #eeeff7;
 }
 .view-filter a {
-  color: #ffcc29;
+  color: #F58634;
   padding-right: 8px;
   display: inline-block;
   vertical-align: middle;
@@ -1420,7 +1420,7 @@ html .ui-button.ui-state-disabled:active {
 .widget-price #amount {
   margin-top: 10px;
   width: 90px;
-  color: #ffcc29;
+  color: #F58634;
 }
 
 .allwhite {
@@ -1487,7 +1487,7 @@ html .ui-button.ui-state-disabled:active {
 /*Product Details*/
 .product-price {
   font-size: 18px;
-  color: #ffcc29;
+  color: #F58634;
 }
 .product-price del {
   color: #ccc;
@@ -1505,7 +1505,7 @@ input.form-product {
   width: 150px;
   border-top: 1px solid #eeeff7;
   border-bottom: 1px solid #eeeff7;
-  color: #ffcc29;
+  color: #F58634;
   vertical-align: middle;
 }
 
@@ -1524,7 +1524,7 @@ input.form-product {
 }
 .btn-product {
   background: none;
-  color: #ffcc29;
+  color: #F58634;
   border: 1px solid #eeeff7;
   height: 40px;
   width: auto;
@@ -1595,7 +1595,7 @@ input.form-product {
 }
 .cart-total {
   font-size: 16px;
-  color: #ffcc29;
+  color: #F58634;
 }
 .btn-delet {
   border: none;
@@ -1674,3 +1674,15 @@ input.form-product {
   
   overflow:scroll;
 }
+
+/* @media only screen and (max-width: 600px) {
+  #bigScreen {
+    display: none !important;
+
+  }
+
+  #smallScreen {
+    display: inline-block !important;
+  }
+
+} */

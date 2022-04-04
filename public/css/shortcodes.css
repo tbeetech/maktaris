@@ -71,7 +71,7 @@
 }
 .btn-sm {
   padding: 10px;
-  color: #ffcc29;
+  color: #F58634;
 }
 .btn:hover {
   background: #81b214;
@@ -87,7 +87,7 @@
 }
 .btn.btn-white {
   background: #ffffff;
-  color: #ffcc29;
+  color: #F58634;
 }
 .btn.btn-white:hover {
   background: #81b214;
@@ -97,7 +97,7 @@
 .btn.btn-border {
   background: none;
   border: 2px solid #2b580c;
-  color: #ffcc29;
+  color: #F58634;
 }
 .btn.btn-border:hover {
   background: #2b580c;
@@ -227,8 +227,8 @@
   right: 0.0625rem;
   width: 0.625rem;
   height: 0.625rem;
-  border-top: 0.125rem solid #ffcc29;
-  border-right: 0.125rem solid #ffcc29;
+  border-top: 0.125rem solid #F58634;
+  border-right: 0.125rem solid #F58634;
   transform: rotate(45deg);
 }
 .btn-2.white .btn-text {
@@ -240,7 +240,7 @@
   display: inline-block;
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   padding: 0;
-  color: #ffcc29;
+  color: #F58634;
   font-weight: 600;
   line-height: 1.6;
   text-align: center;
@@ -270,7 +270,7 @@
   border: none;
 }
 .btn-2.btn-border .btn-text {
-  color: #ffcc29;
+  color: #F58634;
 }
 .btn-2.btn-border:before {
   background: transparent;
@@ -305,7 +305,7 @@
 
 /*** Style 3 ***/
 .btn-simple {
-  color: #ffcc29;
+  color: #F58634;
 }
 .btn-simple:hover {
   color: #2b580c;
@@ -346,7 +346,7 @@
   background: none;
   font-weight: 400;
   font-size: 16px;
-  color: #ffcc29;
+  color: #F58634;
   text-transform: capitalize;
   display: inline-block;
   width: 100%;
@@ -406,7 +406,7 @@
   border-radius: 0.25rem;
   border: 0;
   background: transparent;
-  color: #ffcc29;
+  color: #F58634;
   overflow: hidden;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -602,7 +602,7 @@
   border-radius: 0.25rem;
 }
 .team-member .team-description span {
-  color: #ffcc29;
+  color: #F58634;
   font-weight: 500;
   display: block;
 }
@@ -736,7 +736,7 @@
 
 /*** Team Single ***/
 .team-cntct .team-icon li a {
-  color: #ffcc29;
+  color: #F58634;
 }
 .team-cntct .team-icon li a:hover {
   color: #2b580c;
@@ -769,7 +769,7 @@
   border-radius: 0.25rem;
   font-size: 15px;
   font-weight: 600;
-  color: #ffcc29;
+  color: #F58634;
   position: relative;
   border: 1px solid #eeeff7;
   padding: 10px 15px;
@@ -835,12 +835,12 @@
 .counter span + span {
   font-weight: normal;
   font-size: 30px;
-  color: #ffcc29;
+  color: #F58634;
   margin-bottom: 0;
 }
 .counter h6 {
   display: block;
-  color: #ffcc29;
+  color: #F58634;
   font-size: 20px;
   font-weight: 400;
   position: relative;
@@ -891,7 +891,7 @@
   font-weight: 600;
 }
 .post .post-desc h4 a {
-  color: #ffcc29;
+  color: #F58634;
   display: inline-block;
 }
 .post .post-desc h4 a:hover {
@@ -927,7 +927,7 @@
   margin-right: 10px;
 }
 .post-author {
-  color: #ffcc29;
+  color: #F58634;
 }
 
 /*** Blog Single ***/
@@ -952,7 +952,7 @@
 }
 .post-queto {
   background: #ffffff;
-  color: #ffcc29;
+  color: #F58634;
   padding: 30px;
   font-size: 18px;
   font-style: italic;
@@ -965,7 +965,7 @@
   padding: 30px;
 }
 .media-holder .media-body h6 {
-  color: #ffcc29;
+  color: #F58634;
   margin-bottom: 0;
   font-weight: 600;
   font-size: 20px;
@@ -983,7 +983,7 @@
   margin-top: 20px;
 }
 .comment-reply a {
-  color: #ffcc29;
+  color: #F58634;
   font-weight: 600;
   display: inline-block;
 }
@@ -1007,7 +1007,7 @@
   line-height: 50px;
   padding: 0;
   text-align: center;
-  color: #ffcc29;
+  color: #F58634;
   font-weight: 600;
   border-radius: 50% !important;
   border-color: #efefef;
@@ -1025,7 +1025,7 @@
 .widget-title {
   margin-top: 50px;
   font-weight: 600;
-  color: #ffcc29;
+  color: #F58634;
   display: inline-block;
   position: relative;
   width: 100%;
@@ -1078,7 +1078,7 @@
 .widget .recent-post-desc a {
   display: block;
   margin-top: 10px;
-  color: #ffcc29;
+  color: #F58634;
   font-weight: 600;
 }
 .widget .recent-post-desc a:hover {
@@ -1127,7 +1127,7 @@
 .post-tags li a {
   background: #fafaff;
   border-radius: 7px;
-  color: #ffcc29;
+  color: #F58634;
   padding: 10px 18px;
   display: inline-block;
   text-align: center;
@@ -1158,7 +1158,7 @@
   line-height: 34px;
   font-weight: 500;
   margin-bottom: 0;
-  color: #ffcc29;
+  color: #F58634;
 }
 .testimonial-caption {
   position: relative;
@@ -1394,7 +1394,7 @@
   background: #c0e218;
 }
 .featured-item.style-6:hover .featured-icon i {
-  color: #ffcc29;
+  color: #F58634;
 }
 
 .featured-item.style-6:hover .iconcircle:first-child {
@@ -1504,7 +1504,7 @@
 .price-title {
   text-transform: capitalize;
   font-weight: 400;
-  color: #ffcc29;
+  color: #F58634;
   margin-bottom: 20px;
 }
 .price-header {
@@ -1561,7 +1561,7 @@
   margin-bottom: 40px;
 }
 .ht-progress-bar h4 {
-  color: #ffcc29;
+  color: #F58634;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -1752,7 +1752,7 @@
   font-size: 30px;
 }
 .cases-meta li span {
-  color: #ffcc29;
+  color: #F58634;
   display: block;
   font-weight: 600;
   margin-bottom: 7px;
@@ -1770,7 +1770,7 @@
 .sidebar-links li a {
   border: 2px solid #eeeff7;
   border-radius: 0.25rem;
-  color: #ffcc29;
+  color: #F58634;
   display: block;
   font-size: 15px;
   font-weight: 600;
@@ -1813,9 +1813,9 @@
   right: 0.0625rem;
   width: 0.625rem;
   height: 0.625rem;
-  border-top: 0.125rem solid #ffcc29;
+  border-top: 0.125rem solid #F58634;
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  border-right: 0.125rem solid #ffcc29;
+  border-right: 0.125rem solid #F58634;
   transform: rotate(45deg);
 }
 .sidebar-links li a .link-text {
@@ -1827,7 +1827,7 @@
   display: inline-block;
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   padding: 0;
-  color: #ffcc29;
+  color: #F58634;
   font-weight: 600;
   line-height: 1.6;
   text-align: center;
@@ -1883,7 +1883,7 @@
   width: 60px;
 }
 .brochure span {
-  color: #ffcc29;
+  color: #F58634;
   font-size: 14px;
   display: block;
   font-weight: 400;

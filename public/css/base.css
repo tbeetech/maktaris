@@ -601,7 +601,7 @@ span,
 }
 .topbar-link a,
 .topbar-link p {
-  color: #ffcc29;
+  color: #F58634;
   font-weight: 500;
 }
 .topbar-link i {
@@ -693,7 +693,7 @@ span,
   z-index: 200;
 }
 .cart > a {
-  color: #ffcc29;
+  color: #F58634;
   position: relative;
   z-index: 1;
   display: inline-block;
@@ -1108,7 +1108,7 @@ span,
 }
 .ht-nav-toggle.active.show span::before,
 .ht-nav-toggle.active.show span::after {
-  background: #ffcc29;
+  background: #F58634;
 }
 .ht-nav-toggle:hover,
 .ht-nav-toggle:focus,
@@ -1289,28 +1289,28 @@ span,
 }
 .page-title h1 {
   font-size: 50px;
-  color: #ffcc29;
+  color: #F58634;
   line-height: 60px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 .page-title p {
   margin-bottom: 0;
-  color: #ffcc29;
+  color: #F58634;
 }
 .breadcrumb {
   background: #ffffff;
   display: inline-block;
   margin: 0;
   text-transform: capitalize;
-  color: #ffcc29;
+  color: #F58634;
   font-weight: 700;
 }
 .breadcrumb-item {
   display: inline-block;
 }
 .breadcrumb-item a {
-  color: #ffcc29;
+  color: #F58634;
 }
 .breadcrumb-item.active,
 .breadcrumb-item a:hover {

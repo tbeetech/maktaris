@@ -235,7 +235,7 @@
 }
 .owl-carousel .owl-dots .owl-dot span {
   background: none;
-  border: 2px solid #ffcc29;
+  border: 2px solid #F58634;
   border-radius: 50%;
   display: inline-block;
   width: 10px;
@@ -252,7 +252,7 @@
   display: block;
   width: 12px;
   height: 2px;
-  background-color: #ffcc29;
+  background-color: #F58634;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -263,7 +263,7 @@
   display: block;
   width: 12px;
   height: 2px;
-  background-color: #ffcc29;
+  background-color: #F58634;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -306,7 +306,7 @@
   background: #ffffff;
   border-radius: 0.25rem;
   border: 1px solid #2b580c;
-  color: #ffcc29;
+  color: #F58634;
   cursor: pointer;
   display: inline-block;
   font-size: 24px;
