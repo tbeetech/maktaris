@@ -3,6 +3,7 @@
 const storedData = JSON.parse(localStorage.getItem("allitems"));
 const storedList = JSON.parse(localStorage.getItem("finalList0"));
 const storedList2 = JSON.parse(localStorage.getItem("finalList1"));
+
 const p1 = JSON.parse(localStorage.getItem("product1"));
 const p2 = JSON.parse(localStorage.getItem("product2"));
 const p3 = JSON.parse(localStorage.getItem("product3"));
@@ -19,25 +20,17 @@ const p13 = JSON.parse(localStorage.getItem("product13"));
 const p14 = JSON.parse(localStorage.getItem("product14"));
 const p15 = JSON.parse(localStorage.getItem("product15"));
 
+const pHolds = [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15]
+
 const ilength = localStorage.getItem("i1");
 
-let productHolder = [
-  p1,
-  p2,
-  p3,
-  p4,
-  p5,
-  p6,
-  p7,
-  p8,
-  p9,
-  p10,
-  p11,
-  p12,
-  p13,
-  p14,
-  p15,
+var productHolder = [
+  
 ];
+for(let i = 0; i < ilength; i++) {
+  productHolder.push(pHolds[i])
+}
+console.log("i am holding" , productHolder)
 
 console.log(p1);
 console.log(p2);
@@ -55,16 +48,32 @@ console.log(p13);
 console.log(p14);
 console.log(p15);
 //complete all arrays up to 16.
-let prodNames = ["prod1", "prod2", "prod3", "prod4", "prod5"]
-let quantityList = ["fp1", "fp2", "fp3", "fp4", "fp5"]
-let perItem = ["toti1", "toti2", "toti3", "toti4", "toti5"]
+
+var prodNames = []
+for (let i = 1 ; i<16; i++) {
+  prodNames.push(`prod${i}`)
+}
+
+var quantityList = []
+for (let i = 1; i<16; i++) {
+  quantityList.push(`fp${i}`)
+}
+
+var perItem = []
+for (let i = 1; i<16; i++) {
+  perItem.push(`toti${i}`)
+}
+
 
 for (let i = 0; i < ilength; i++) {
-  const cartTray = document.createElement("tr");
+  var cartTray = document.createElement("tr");
+
+  
+  
 
   cartTray.innerHTML = `<td>
     <div class="media">
-      <div class="d-flex">
+      <div class0="d-flex">
         <a href="#">
           <img class="img-fluid rounded box-shadow" src="${productHolder[i].img}" alt="">
         </a>
@@ -87,7 +96,7 @@ for (let i = 0; i < ilength; i++) {
     </div>
   </td>
   <td>
-    <button type="submit" class="btn-delet"><i class=""></i>
+    <button type="submit" class="exitItem"><i class="fa fa-trash"></i>
     </button>
   </td>
   <td>
@@ -97,16 +106,22 @@ for (let i = 0; i < ilength; i++) {
   `;
   const cartTable = document.querySelector(".tbody");
   cartTable.appendChild(cartTray);
+  
   localStorage.setItem(prodNames[i], productHolder[i].name)
 
   localStorage.setItem(quantityList[i], document.querySelectorAll(".form-product")[i].value);
 
   localStorage.setItem(perItem[i], document.querySelectorAll(".totalup")[i].innerHTML);
 
+  
 
 }
+
+
 const allPlusButtons = document.querySelectorAll(".btn-product-down");
 const allMinusButtons = document.querySelectorAll(".btn-product-up");
+
+const everyExitItem = document.querySelectorAll(".exitItem");
 let totalAfterUpdate = document.querySelectorAll(".totalup");
 let finalTotal = document.querySelector(".finalTotal");
 // let formQuantity = ;
@@ -208,6 +223,46 @@ for(let i = 0; i < allMinusButtons.length; i++) {
 
 
 }
+
+
+
+
+for (let i = 0; i < everyExitItem.length; i++) {
+  everyExitItem[i].addEventListener("click", ()=>{
+    
+    let multiplesingle = parseInt(totalAfterUpdate[i].textContent);
+
+    finalTotalInt -= multiplesingle
+    finalTotal.innerHTML = finalTotalInt
+    let toDelete = everyExitItem[i].parentElement.parentElement
+    console.log("a" + productHolder[i].name)
+    
+    console.log("all" , document.querySelectorAll("tr")[i].innerHTML)
+
+    toDelete.remove()
+    // console.log(delete productHolder[i])
+    
+    console.log(localStorage.removeItem(prodNames[i]))
+    
+    console.log(localStorage.removeItem(quantityList[i]));
+  
+    console.log(localStorage.removeItem(perItem[i]));
+  	
+
+    localStorage.setItem('pp', productHolder)
+    localStorage.setItem("total", JSON.stringify(finalTotalInt))
+    
+   
+
+
+  
+
+    // finalTotalInt = finalTotalInt - 
+  })
+  
+}
+
+
 
 // console.log(document.querySelectorAll(".form-product")[0].value);
 

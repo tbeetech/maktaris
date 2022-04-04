@@ -3,45 +3,111 @@ const total = localStorage.getItem("total")
 document.querySelector(".ctt").innerHTML += total;
 
 let i1here = localStorage.getItem("i1");
+let prodNames = []
+
+for(let i = 1; i < 16; i++) {
+    prodNames.push(`prod${i}`)
+}
+console.log(prodNames)
+
+let prodPicker = []
+for(let i = 0; i < 16; i++) {
+   
+    prodPicker.push(localStorage.getItem(prodNames[i]))
+}
 
 
 
 
-const fproduct1Name = localStorage.getItem("prod1");
-const fproduct2Name = localStorage.getItem("prod2");
-const fproduct3Name = localStorage.getItem("prod3");
-const fproduct4Name = localStorage.getItem("prod4");
-const fproduct5Name = localStorage.getItem("prod5");
-
-const ArrFinaleName = [fproduct1Name, fproduct2Name, fproduct3Name, fproduct4Name, fproduct5Name]
-
-//Each product quantity
-let pq1 = localStorage.getItem("fp1")
-let pq2 = localStorage.getItem("fp2")
-let pq3 = localStorage.getItem("fp3")
-let pq4 = localStorage.getItem("fp4")
-let pq5 = localStorage.getItem("fp5")
+const finalprodPicker = []
+prodPicker.forEach(e=>{
+    if( e !== null ) {
+        finalprodPicker.push(e);
+    }
+}) 
 
 
-const ArrFinalQ = [pq1, pq2, pq3, pq4, pq5]
-
-//each product final price depending on the quantity
-let fprice1 = localStorage.getItem("toti1");
-let fprice2 = localStorage.getItem("toti2");
-let fprice3 = localStorage.getItem("toti3");
-let fprice4 = localStorage.getItem("toti4");
-let fprice5 = localStorage.getItem("toti5");
 
 
-const ArrFinalPrice = [fprice1, fprice2, fprice3, fprice4, fprice5]
+console.log("propicker", finalprodPicker)
+
+let quantityList = []
+for(let i = 1; i < 16; i++) {
+    quantityList.push(`fp${i}`)
+}
+
+let QuanPicker = []
+for(let i = 0; i < 16; i++) {
+    QuanPicker.push(localStorage.getItem(quantityList[i]))
+}
+
+
+const finalQuanPicker = []
+QuanPicker.forEach(e=>{
+    if( e !== null) {
+        finalQuanPicker.push(e);
+    }
+}) 
+
+
+console.log("quantitaive reasoning", QuanPicker)
+
+
+let perItem = []
+for(let i = 1; i < 16; i++) {
+    perItem.push(`toti${i}`)
+}
+
+PricePicker = []
+for(let i = 0; i < 16; i++) {
+    PricePicker.push(localStorage.getItem(perItem[i]))
+}
+
+const finalPricePicker = []
+PricePicker.forEach(e=>{
+    if( e !== null) {
+        finalPricePicker.push(e);
+    }
+}) 
+console.log("prices", PricePicker)
+// console.log(localStorage.getItem('pp'))
+// let allproducts = localStorage.getItem('allproducts');
+
+// const fproduct1Name = localStorage.getItem("prod1");
+// const fproduct2Name = localStorage.getItem("prod2");
+// const fproduct3Name = localStorage.getItem("prod3");
+// const fproduct4Name = localStorage.getItem("prod4");
+// const fproduct5Name = localStorage.getItem("prod5");
+
+// const ArrFinaleName = [fproduct1Name, fproduct2Name, fproduct3Name, fproduct4Name, fproduct5Name]
+
+// //Each product quantity
+// let pq1 = localStorage.getItem("fp1")
+// let pq2 = localStorage.getItem("fp2")
+// let pq3 = localStorage.getItem("fp3")
+// let pq4 = localStorage.getItem("fp4")
+// let pq5 = localStorage.getItem("fp5")
+
+
+// const ArrFinalQ = [pq1, pq2, pq3, pq4, pq5]
+
+// //each product final price depending on the quantity
+// let fprice1 = localStorage.getItem("toti1");
+// let fprice2 = localStorage.getItem("toti2");
+// let fprice3 = localStorage.getItem("toti3");
+// let fprice4 = localStorage.getItem("toti4");
+// let fprice5 = localStorage.getItem("toti5");
+
+
+    // const ArrFinalPrice = [fprice1, fprice2, fprice3, fprice4, fprice5]
 
 const buttonEstimation = document.querySelector(".fbt")
-for (let i=0; i< i1here; i++) {
+for (let i=0; i< finalprodPicker.length; i++) {
     let holder = document.createElement("ul");
     holder.classList.add("list-unstyled");
     // let singleTotalHolder = document.createElement("li");
     // singleTotalHolder.classList.add('mb-3')
-    holder.innerHTML = ` <li class="mb-3"><span>${ArrFinalQ[i] + "X"} <span></span>${ArrFinaleName[i]}</span>${" ₦" + ArrFinalPrice[i]}</li>`
+    holder.innerHTML = ` <li class="mb-3"><span>${finalQuanPicker[i] + "X"} <span></span>${finalprodPicker[i]}</span>${" ₦" + finalPricePicker[i]}</li>`
     const cartDet = document.querySelector(".cart-detail");
     cartDet.insertBefore(holder, cartDet.childNodes[0])
     // cartDet.appendChild(holder);
