@@ -96,7 +96,7 @@ for (let i = 0; i < ilength; i++) {
     </div>
   </td>
   <td>
-    <button type="submit" class="exitItem"><i class="fa fa-trash"></i>
+    <button style="border:none" type="submit" class="exitItem"><i class="fa fa-trash"></i>
     </button>
   </td>
   <td>
