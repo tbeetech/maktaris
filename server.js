@@ -58,7 +58,9 @@ app.get('/about', (req, res)=>{
 app.get('/gridshop', (req, res)=> {
     res.render('gridshop', {finalDate:finalDate})
 })
-
+app.get('/sitemap', (req,res) => {
+    res.sendFile('sitemap.xml')
+})
 app.get('/cart', (req, res)=> {
     res.render('cart', {finalDate:finalDate})
 })
