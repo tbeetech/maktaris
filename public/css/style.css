@@ -1675,14 +1675,25 @@ input.form-product {
   overflow:scroll;
 }
 
+
+
 /* @media only screen and (max-width: 600px) {
   #bigScreen {
     display: none !important;
-
   }
 
   #smallScreen {
-    display: inline-block !important;
+    display: block !important;
+  }
+
+}
+@media only screen and (min-width: 600px) {
+  #bigScreen {
+    display: block !important;
+  }
+
+  #smallScreen {
+    display: none !important;
   }
 
 } */
