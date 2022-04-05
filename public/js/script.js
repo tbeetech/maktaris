@@ -42,8 +42,8 @@ var addcart = (function AddToCart() {
           .parentNode.childNodes[3].childNodes[2].textContent);
 
         let price =
-        cardBtn[i].firstChild.nextElementSibling.parentNode.parentNode.parentNode.parentNode.parentNode
-        .parentNode.childNodes[3].childNodes[2].textContent;
+        cardBtn[i].firstChild.nextElementSibling.parentNode.parentNode.parentNode.parentNode.parentNode.nextElementSibling.childNodes[3].textContent
+        
         let finalPrice = price.slice(1).trim();
         item.price = finalPrice;
         console.log("the items are:", item);
