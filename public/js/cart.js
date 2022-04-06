@@ -50,18 +50,26 @@ console.log(p15);
 //complete all arrays up to 16.
 
 var prodNames = []
-for (let i = 1 ; i<16; i++) {
-  prodNames.push(`prod${i}`)
+let ix = 1
+for (let i = 0 ; i<16; i++) {
+  prodNames.push(`prod${ix}`)
+  ix++
 }
 
 var quantityList = []
-for (let i = 1; i<16; i++) {
-  quantityList.push(`fp${i}`)
+let i2 = 1
+for (let i = 0; i<16; i++) {
+  quantityList.push(`fp${i2}`)
+  i2++
 }
 
 var perItem = []
-for (let i = 1; i<16; i++) {
-  perItem.push(`toti${i}`)
+let i3 = 1
+
+for (let i = 0; i<16; i++) {
+  
+  perItem.push(`toti${i3++}`)
+  i3++
 }
 
 
