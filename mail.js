@@ -4,7 +4,7 @@ const dotenv = require('dotenv')
 dotenv.config({path : './config/config.env'})
 
 
-
+ 
 const auth = {
   auth: {
     api_key: process.env.MAILGUN_API,
