@@ -1,6 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const dotenv = require('dotenv')
 const sendMail = require('./mail')
+dotenv.config({path : './config/config.env'})
 const sendMailContact = require("./contactemail")
 const app = express();
 const PORT = process.env.PORT || 5000;
