@@ -1,18 +1,4 @@
 {
-    "name": "vercel-testing",
-    "version": "1.0.0",
-    "description": "node express testing",
-    "main": "server.js",
-    "scripts": {
-        "start":"nodemon server.js",
-        "test":"Echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "express": "^4.17.3",
-        "nodemon": "^2.0.15"
-    }
-
+    "name": "maktaris store",
+    "version": 2
 } 
