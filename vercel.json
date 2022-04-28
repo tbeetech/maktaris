@@ -1,8 +1,7 @@
 {
     "name": "vercel-testing",
     "version": "1.0.0",
-    "keywords": [],
-    "author": "",
+    "author": "tbeetech",
     "license": "ISC",
     "dependencies": {
         "express": "^4.17.3",
