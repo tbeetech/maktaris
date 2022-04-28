@@ -3,7 +3,7 @@ const mailGun = require("nodemailer-mailgun-transport");
 
 const auth = {
   auth: {
-    api_key:process.env.MAILGUN_API,
+    api_key: process.env.MAILGUN_API,
     domain:"mail.maktarisherbals.com", // Setup new Domain.
   },
 };
