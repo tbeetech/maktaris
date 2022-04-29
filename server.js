@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const dotenv = require('dotenv')
 const sendMail = require('./mail')
 const app = express();
+app.set('view engine', 'ejs')
 dotenv.config({path : './config/config.env'})
 const sendMailContact = require("./contactemail")
 
@@ -14,7 +15,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 const d = new Date();
 const finalDate = d.getFullYear();
-app.set('view engine', 'ejs')
+
 // app.get('*', function(req, res) {  
 //     res.redirect('https://' + req.headers.host + req.url);
 // });
