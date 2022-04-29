@@ -2,9 +2,10 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const dotenv = require('dotenv')
 const sendMail = require('./mail')
+const app = express();
 dotenv.config({path : './config/config.env'})
 const sendMailContact = require("./contactemail")
-const app = express();
+
 const PORT = process.env.PORT || 5000;
 app.use(express.static('public'))
 app.use(express.json())
