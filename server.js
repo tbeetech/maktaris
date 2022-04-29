@@ -4,7 +4,7 @@ const dotenv = require('dotenv')
 const sendMail = require('./mail')
 const app = express();
 app.set('view engine', 'ejs')
-dotenv.config({path : './config/config.env'})
+dotenv.config({path : './config/.env'})
 const sendMailContact = require("./contactemail")
 
 const PORT = process.env.PORT || 5000;
