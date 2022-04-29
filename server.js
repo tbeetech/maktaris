@@ -54,7 +54,7 @@ app.post('/contact', (req, res)=> {
 })
 
 app.get('/', (req,res)=> {
-    res.render('pages/index', {finalDate:finalDate})
+    res.render('index', {finalDate:finalDate})
 })
 app.get('/about', (req, res)=>{
     res.render('about', {finalDate:finalDate})
