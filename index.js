@@ -8,7 +8,9 @@ dotenv.config({path : './config/.env'})
 const sendMailContact = require("./contactemail")
 
 const PORT = process.env.PORT || 5000;
-app.use(express.static('public'))
+// app.use(express.static('public'))
+app.use(express.static(__dirname + "/public"));
+
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended: false}));
 
