@@ -7,7 +7,7 @@ app.set('view engine', 'ejs')
 dotenv.config({path : './config/.env'})
 const sendMailContact = require("./contactemail")
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 // app.use(express.static('public'))
 app.use(express.static(__dirname + "/public"));
 
@@ -81,6 +81,6 @@ app.get('/product-checkout', (req, res)=> {
 })
 
 
-app.listen(PORT, ()=> {
+app.listen(process.env.PORT || PORT, ()=> {
     console.log('HERBAL SERVER IS RUNNING!')
 })
