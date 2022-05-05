@@ -1,5 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+var favicon = require('serve-favicon');
+const path = require("path")
 const dotenv = require('dotenv')
 const sendMail = require('./mail')
 const app = express();
@@ -10,6 +12,7 @@ const sendMailContact = require("./contactemail")
 const PORT = 5000;
 // app.use(express.static('public'))
 app.use(express.static(__dirname + "/public"));
+app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
 
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended: false}));
