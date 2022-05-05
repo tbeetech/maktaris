@@ -1,12 +1,12 @@
+require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser");
 var favicon = require('serve-favicon');
 const path = require("path")
-const dotenv = require('dotenv')
 const sendMail = require('./mail')
 const app = express();
 app.set('view engine', 'ejs')
-dotenv.config({path : './config/.env'})
+
 const sendMailContact = require("./contactemail")
 
 const PORT = 5000;

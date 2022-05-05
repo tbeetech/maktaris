@@ -1,9 +1,6 @@
 const nodemailer = require("nodemailer");
 const mailGun = require("nodemailer-mailgun-transport");
-const dotenv = require('dotenv')
-dotenv.config({path : './config/.env'})
-
-
+require('dotenv').config()
 
 const auth = {
   auth: {
