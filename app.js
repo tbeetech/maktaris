@@ -66,7 +66,7 @@ app.get('/about', (req, res)=>{
 })
 
 app.get('/gridshop', (req, res)=> {
-    res.render('pages/gridshop', {finalDate:finalDate})
+    res.render('gridshop', {finalDate:finalDate})
 })
 app.get('/sitemap', (req,res) => {
     res.sendFile('sitemap.xml')
