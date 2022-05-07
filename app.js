@@ -1,5 +1,4 @@
 require('dotenv').config()
-const PORT = 5000;
 const express = require("express");
 const bodyParser = require("body-parser");
 var favicon = require('serve-favicon');
@@ -85,6 +84,6 @@ app.get('/product-checkout', (req, res)=> {
 })
 
 
-app.listen(process.env.PORT || PORT, ()=> {
+app.listen(process.env.PORT || 5000, ()=> {
     console.log('HERBAL SERVER IS RUNNING!')
 })
