@@ -10,7 +10,7 @@ app.set('view engine', 'ejs')
 const sendMailContact = require("./contactemail")
 
 
-// app.use(express.static('public'))
+app.use(express.static('public'))
 app.use(express.static(__dirname + "/public"));
 app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
 
