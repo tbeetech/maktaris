@@ -1,4 +1,5 @@
 require('dotenv').config()
+const PORT = 5000;
 const express = require("express");
 const bodyParser = require("body-parser");
 var favicon = require('serve-favicon');
@@ -9,7 +10,7 @@ app.set('view engine', 'ejs')
 
 const sendMailContact = require("./contactemail")
 
-const PORT = 5000;
+
 // app.use(express.static('public'))
 app.use(express.static(__dirname + "/public"));
 app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
