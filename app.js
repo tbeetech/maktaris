@@ -59,14 +59,14 @@ app.post('/contact', (req, res)=> {
 })
 
 app.get('/', (req,res)=> {
-    res.render('pages/index', {finalDate:finalDate})
+    res.render('index', {finalDate:finalDate})
 })
 app.get('/about', (req, res)=>{
     res.render('about', {finalDate:finalDate})
 })
 
 app.get('/gridshop', (req, res)=> {
-    res.render('gridshop', {finalDate:finalDate})
+    res.render('pages/gridshop', {finalDate:finalDate})
 })
 app.get('/sitemap', (req,res) => {
     res.sendFile('sitemap.xml')
