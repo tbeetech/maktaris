@@ -2,12 +2,12 @@
   "name": "herbal",
   "version": "1.0.0",
   "description": "e-commerce herbal store",
-  "main": "index.js",
+  "main": "app.js",
   "engines": {
     "node": "16.15.0"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "tbeetech",
