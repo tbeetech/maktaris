@@ -1,5 +1,4 @@
-// import ac from "./script.js";
-// console.log(ac);
+
 const storedData = JSON.parse(localStorage.getItem("allitems"));
 const storedList = JSON.parse(localStorage.getItem("finalList0"));
 const storedList2 = JSON.parse(localStorage.getItem("finalList1"));
