@@ -1,18 +1,26 @@
+require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser");
-const dotenv = require('dotenv')
-const sendMail = require('./mail')
-dotenv.config({path : './config/config.env'})
-const sendMailContact = require("./contactemail")
+var favicon = require('serve-favicon');
+const path = require("path")
+// const sendMail = require('./mail')
 const app = express();
-const PORT = process.env.PORT || 5000;
+app.set('view engine', 'ejs')
+
+// const sendMailContact = require("./contactemail")
+
+
 app.use(express.static('public'))
+app.use(express.static(__dirname + "/public"));
+app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
+
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended: false}));
 
+
 const d = new Date();
 const finalDate = d.getFullYear();
-app.set('view engine', 'ejs')
+
 // app.get('*', function(req, res) {  
 //     res.redirect('https://' + req.headers.host + req.url);
 // });
@@ -36,19 +44,19 @@ app.post('/product-checkout', (req, res)=> {
       })
 })
 
-app.post('/contact', (req, res)=> {
-    const {email, subject, text} = req.body;
-    console.log("Contact Data: ", req.body);
+// app.post('/contact', (req, res)=> {
+//     const {email, subject, text} = req.body;
+//     console.log("Contact Data: ", req.body);
 
-    sendMailContact(email, subject, text, function(err, data){
-        if(err) {
-            res.status(500).json({ message: 'Internal error'});
+//     sendMailContact(email, subject, text, function(err, data){
+//         if(err) {
+//             res.status(500).json({ message: 'Internal error'});
         
-        } else {
-            res.json({message: 'Email has been sent!!'})
-        }
-    })
-})
+//         } else {
+//             res.json({message: 'Email has been sent!!'})
+//         }
+//     })
+// })
 
 app.get('/', (req,res)=> {
     res.render('index', {finalDate:finalDate})
@@ -76,6 +84,6 @@ app.get('/product-checkout', (req, res)=> {
 })
 
 
-app.listen(PORT, ()=> {
+app.listen(process.env.PORT || 5000, ()=> {
     console.log('HERBAL SERVER IS RUNNING!')
 })
